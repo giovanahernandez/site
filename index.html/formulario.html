@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Formulario Derechos de los Animales</title>
+  <style>
+    body {
+      background-color: #ffe6f0;
+      font-family: Arial, sans-serif;
+    }
+    table {
+      width: 90%;
+      margin: auto;
+      border-collapse: collapse;
+      background-color: #fff0f5;
+      border: 2px solid #cc3399;
+    }
+    th, td {
+      border: 1px solid #cc3399;
+      padding: 10px;
+    }
+    th {
+      background-color: #f4c2c2;
+      text-align: center;
+      font-size: 20px;
+    }
+    input[type="text"], textarea, select {
+      width: 100%;
+      padding: 5px;
+    }
+    img {
+      width: 100px;
+      height: auto;
+      margin: 5px;
+      border-radius: 8px;
+    }
+    .botones {
+      text-align: center;
+      padding: 10px;
+    }
+    .botones input {
+      padding: 8px 16px;
+      margin: 5px;
+    }
+  </style>
+</head>
+<body>
+
+  <form>
+    <table>
+      <tr>
+        <th colspan="2">Autoevaluación Derechos de los Animales</th>
+      </tr>
+      <tr>
+        <td><strong>Nombre completo:</strong></td>
+        <td><input type="text" name="nombre" required></td>
+      </tr>
+      <tr>
+        <td>1. ¿Cuál de los siguientes es un derecho fundamental de los animales?</td>
+        <td>
+          <label><input type="radio" name="p1" value="a"> a. Derecho a trabajar</label><br>
+          <label><input type="radio" name="p1" value="b"> b. Derecho a la educación</label><br>
+          <label><input type="radio" name="p1" value="c"> c. Derecho a no ser maltratado</label><br>
+          <label><input type="radio" name="p1" value="d"> d. Derecho al voto</label>
+        </td>
+      </tr>
+      <tr>
+        <td>2. ¿Qué ley protege los derechos de los animales en México?</td>
+        <td>
+          <label><input type="checkbox" name="p2a"> a. Ley Federal del Trabajo</label><br>
+          <label><input type="checkbox" name="p2b"> b. Ley de Protección Animal</label><br>
+          <label><input type="checkbox" name="p2c"> c. Ley General de Educación</label><br>
+          <label><input type="checkbox" name="p2d"> d. Ley de Derechos Humanos</label>
+        </td>
+      </tr>
+      <tr>
+        <td>3. ¿Cuál de los siguientes ejemplos NO representa maltrato animal?</td>
+        <td>
+          <label><input type="radio" name="p3" value="a"> a. Tener mascotas en condiciones insalubres</label><br>
+          <label><input type="radio" name="p3" value="b"> b. Abandonar a un animal</label><br>
+          <label><input type="radio" name="p3" value="c"> c. Dar alimento y atención veterinaria</label><br>
+          <label><input type="radio" name="p3" value="d"> d. Golpear a un animal</label>
+        </td>
+      </tr>
+      <tr>
+        <td>4. ¿Qué acción puedes tomar para proteger a los animales?</td>
+        <td>
+          <select name="p4">
+            <option value="">Selecciona una opción</option>
+            <option value="a">Adoptar en lugar de comprar</option>
+            <option value="b">Ignorar el maltrato</option>
+            <option value="c">Tirar basura en su hábitat</option>
+            <option value="d">Cazar animales salvajes</option>
+          </select>
+        </td>
+      </tr>
+      <tr>
+        <td>5. ¿Cuál de las siguientes imágenes representa el respeto hacia los animales?</td>
+        <td>
+          <label>
+            <input type="radio" name="p5" value="a">
+            <img src="perro.jpeg" alt="Persona acariciando a un perro">
+          </label>
+          <label>
+            <input type="radio" name="p5" value="b">
+            <img src="perro3.jpeg" alt="Niño alimentando a un gato callejero">
+          </label>
+          <label>
+            <input type="radio" name="p5" value="c">
+            <img src="perro4.jpeg" alt="Personas limpiando playa">
+          </label>
+          <label>
+            <input type="radio" name="p5" value="d">
+            <img src="random.jpeg" alt="Familia adoptando una mascota">
+          </label>
+        </td>
+      </tr>
+<td>
+¿Concideras que los animales tienen derecho?:
+      <td>
+<select name="DESTINO" MULTIPLE SIZE=4>
+<option>Si
+<option>No
+<option>Talvez
+<option> No me interesa
+</td>
+</td>
+</select>
+<br>
+<tr>
+        <td>Comentarios:</td>
+        <td><textarea name="comentarios" rows="4"></textarea></td>
+      </tr>
+      <tr>
+        <td colspan="2" class="botones">
+          <input type="submit" value="Enviar datos">
+          <input type="reset" value="Limpiar datos">
+        </td>
+      </tr>
+    </table>
+  </form>
+<strong><em>Nombre Completo: Hernandez Gomez Ashly Giovana<br>Grupo: Recursamiento Junio 2025<br>Fecha: 17 de junio de 2025</em></strong>
+</body>
+</html> 

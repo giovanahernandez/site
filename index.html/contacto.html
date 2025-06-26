@@ -1,0 +1,410 @@
+contacto.html
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto - Derecho de los Animales</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg nav-menu sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <i class="fas fa-paw me-2"></i>Derecho de los Animales
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html"><i class="fas fa-home me-1"></i>Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="indice.html"><i class="fas fa-list me-1"></i>Índice</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="contacto.html"><i class="fas fa-envelope me-1"></i>Contacto</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container my-5">
+        <div class="content-page">
+            <header class="text-center mb-5">
+                <h1 class="main-title">
+                    <i class="fas fa-envelope me-3"></i>
+                    Contacto
+                </h1>
+                <p class="subtitle">Tu opinión es importante para mejorar este contenido educativo</p>
+            </header>
+
+            <div class="row">
+                <!-- Información de contacto -->
+                <div class="col-lg-4 mb-4">
+                    <div class="media-card h-100">
+                        <h3><i class="fas fa-user-graduate me-2"></i>Información del Autor</h3>
+                        <div class="separator-line"></div>
+                        
+                        <div class="contact-info">
+                            <div class="info-item">
+                                <i class="fas fa-user text-primary me-3"></i>
+                                <strong>Nombre:</strong><br>
+                                Hernández Gómez Ashly
+                            </div>
+                            
+                            <div class="info-item">
+                                <i class="fas fa-envelope text-success me-3"></i>
+                                <strong>Correo Electrónico:</strong><br>
+                                <a href="mailto:ashgiolove@gmail.com" class="link-primary">ashgiolove@gmail.com</a>
+                            </div>
+                            
+                            <div class="info-item">
+                                <i class="fas fa-school text-warning me-3"></i>
+                                <strong>Institución:</strong><br>
+                                CETis N° 54 "Guadalupe Victoria"
+                            </div>
+                            
+                            <div class="info-item">
+                                <i class="fas fa-book text-info me-3"></i>
+                                <strong>Materia:</strong><br>
+                                Páginas Web
+                            </div>
+                            
+                            <div class="info-item">
+                                <i class="fas fa-chalkboard-teacher text-danger me-3"></i>
+                                <strong>Docente:</strong><br>
+                                Ana Belem Moreno
+                            </div>
+                        </div>
+
+                        <div class="mt-4 text-center">
+                            <a href="mailto:ashgiolove@gmail.com" class="btn-custom btn-primary">
+                                <i class="fas fa-paper-plane me-2"></i>Enviar Email Directo
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Formulario de evaluación -->
+                <div class="col-lg-8">
+                    <div class="media-card">
+                        <h3><i class="fas fa-clipboard-list me-2"></i>Formulario de Evaluación del Sitio Web</h3>
+                        <p class="text-muted">Por favor, evalúa este sitio web educativo sobre derechos de los animales y comparte tus comentarios.</p>
+                        
+                        <form id="evaluacionForm" action="mailto:ashgiolove@gmail.com" method="post" enctype="text/plain">
+                            <div class="row">
+                                <div class="col-md-6 mb-3">
+                                    <label for="nombre" class="form-label">
+                                        <i class="fas fa-user me-2"></i>Nombre Completo *
+                                    </label>
+                                    <input type="text" class="form-control" id="nombre" name="nombre" required>
+                                </div>
+                                
+                                <div class="col-md-6 mb-3">
+                                    <label for="email" class="form-label">
+                                        <i class="fas fa-envelope me-2"></i>Correo Electrónico *
+                                    </label>
+                                    <input type="email" class="form-control" id="email" name="email" required>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-md-6 mb-3">
+                                    <label for="institucion" class="form-label">
+                                        <i class="fas fa-building me-2"></i>Institución/Organización
+                                    </label>
+                                    <input type="text" class="form-control" id="institucion" name="institucion">
+                                </div>
+                                
+                                <div class="col-md-6 mb-3">
+                                    <label for="ocupacion" class="form-label">
+                                        <i class="fas fa-briefcase me-2"></i>Ocupación
+                                    </label>
+                                    <select class="form-control" id="ocupacion" name="ocupacion">
+                                        <option value="">Selecciona una opción</option>
+                                        <option value="estudiante">Estudiante</option>
+                                        <option value="profesor">Profesor/Docente</option>
+                                        <option value="investigador">Investigador</option>
+                                        <option value="activista">Activista por los animales</option>
+                                        <option value="veterinario">Veterinario</option>
+                                        <option value="otro">Otro</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <div class="separator-line"></div>
+
+                            <h5><i class="fas fa-star me-2"></i>Evaluación del Contenido</h5>
+                            
+                            <div class="mb-3">
+                                <label class="form-label">
+                                    <i class="fas fa-thumbs-up me-2"></i>¿Qué te pareció la calidad del contenido?
+                                </label>
+                                <div class="rating-container">
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" name="calidad_contenido" id="calidad1" value="excelente">
+                                        <label class="form-check-label" for="calidad1">Excelente</label>
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" name="calidad_contenido" id="calidad2" value="bueno">
+                                        <label class="form-check-label" for="calidad2">Bueno</label>
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" name="calidad_contenido" id="calidad3" value="regular">
+                                        <label class="form-check-label" for="calidad3">Regular</label>
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" name="calidad_contenido" id="calidad4" value="necesita_mejoras">
+                                        <label class="form-check-label" for="calidad4">Necesita mejoras</label>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="mb-3">
+                                <label class="form-label">
+                                    <i class="fas fa-palette me-2"></i>¿Cómo calificas el diseño visual del sitio?
+                                </label>
+                                <div class="rating-container">
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" name="diseno_visual" id="diseno1" value="muy_atractivo">
+                                        <label class="form-check-label" for="diseno1">Muy atractivo</label>
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" name="diseno_visual" id="diseno2" value="atractivo">
+                                        <label class="form-check-label" for="diseno2">Atractivo</label>
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" name="diseno_visual" id="diseno3" value="aceptable">
+                                        <label class="form-check-label" for="diseno3">Aceptable</label>
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" name="diseno_visual" id="diseno4" value="poco_atractivo">
+                                        <label class="form-check-label" for="diseno4">Poco atractivo</label>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="mb-3">
+                                <label class="form-label">
+                                    <i class="fas fa-mouse-pointer me-2"></i>¿La navegación del sitio te resultó fácil?
+                                </label>
+                                <div class="rating-container">
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" name="navegacion" id="nav1" value="muy_facil">
+                                        <label class="form-check-label" for="nav1">Muy fácil</label>
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" name="navegacion" id="nav2" value="facil">
+                                        <label class="form-check-label" for="nav2">Fácil</label>
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" name="navegacion" id="nav3" value="confusa">
+                                        <label class="form-check-label" for="nav3">Algo confusa</label>
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" name="navegacion" id="nav4" value="muy_confusa">
+                                        <label class="form-check-label" for="nav4">Muy confusa</label>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="mb-3">
+                                <label class="form-label">
+                                    <i class="fas fa-graduation-cap me-2"></i>¿Consideras que el contenido es educativo y útil?
+                                </label>
+                                <div class="rating-container">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" name="educativo" id="educativo1" value="informativo">
+                                        <label class="form-check-label" for="educativo1">Muy informativo</label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" name="educativo" id="educativo2" value="bien_estructurado">
+                                        <label class="form-check-label" for="educativo2">Bien estructurado</label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" name="educativo" id="educativo3" value="fuentes_confiables">
+                                        <label class="form-check-label" for="educativo3">Fuentes confiables</label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" name="educativo" id="educativo4" value="facil_comprension">
+                                        <label class="form-check-label" for="educativo4">Fácil de comprender</label>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="separator-line"></div>
+
+                            <h5><i class="fas fa-comments me-2"></i>Comentarios y Sugerencias</h5>
+                            
+                            <div class="mb-3">
+                                <label for="aspectos_positivos" class="form-label">
+                                    <i class="fas fa-plus-circle me-2"></i>¿Qué aspectos te gustaron más del sitio?
+                                </label>
+                                <textarea class="form-control" id="aspectos_positivos" name="aspectos_positivos" rows="3" 
+                                          placeholder="Menciona los elementos que más te llamaron la atención..."></textarea>
+                            </div>
+
+                            <div class="mb-3">
+                                <label for="sugerencias_mejora" class="form-label">
+                                    <i class="fas fa-lightbulb me-2"></i>¿Qué sugerencias tienes para mejorar el sitio?
+                                </label>
+                                <textarea class="form-control" id="sugerencias_mejora" name="sugerencias_mejora" rows="3" 
+                                          placeholder="Comparte tus ideas para hacer el sitio más útil y atractivo..."></textarea>
+                            </div>
+
+                            <div class="mb-3">
+                                <label for="temas_adicionales" class="form-label">
+                                    <i class="fas fa-plus me-2"></i>¿Qué temas adicionales sobre derechos de los animales te gustaría ver?
+                                </label>
+                                <textarea class="form-control" id="temas_adicionales" name="temas_adicionales" rows="3" 
+                                          placeholder="Sugiere temas que consideres importantes de incluir..."></textarea>
+                            </div>
+
+                            <div class="mb-4">
+                                <label for="comentarios_generales" class="form-label">
+                                    <i class="fas fa-comment me-2"></i>Comentarios generales
+                                </label>
+                                <textarea class="form-control" id="comentarios_generales" name="comentarios_generales" rows="4" 
+                                          placeholder="Comparte cualquier otro comentario o reflexión sobre el sitio web..."></textarea>
+                            </div>
+
+                            <div class="text-center">
+                                <button type="submit" class="btn-custom btn-primary">
+                                    <i class="fas fa-paper-plane me-2"></i>Enviar Evaluación
+                                </button>
+                                <button type="reset" class="btn-custom btn-secondary ms-3">
+                                    <i class="fas fa-undo me-2"></i>Limpiar Formulario
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+            <div class="separator-line"></div>
+
+            <!-- Información adicional -->
+            <div class="row mt-5">
+                <div class="col-md-6">
+                    <div class="media-card">
+                        <h4><i class="fas fa-question-circle me-2"></i>Preguntas Frecuentes</h4>
+                        
+                        <div class="accordion" id="faqAccordion">
+                            <div class="accordion-item">
+                                <h5 class="accordion-header" id="headingOne">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" 
+                                            data-bs-target="#collapseOne" aria-expanded="false">
+                                        ¿Cómo puedo usar este material educativo?
+                                    </button>
+                                </h5>
+                                <div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                    <div class="accordion-body">
+                                        Este sitio web es de uso libre para fines educativos. Puedes compartir el contenido 
+                                        citando la fuente y al autor.
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="accordion-item">
+                                <h5 class="accordion-header" id="headingTwo">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" 
+                                            data-bs-target="#collapseTwo" aria-expanded="false">
+                                        ¿Las fuentes son confiables?
+                                    </button>
+                                </h5>
+                                <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                    <div class="accordion-body">
+                                        Todas las referencias provienen de organizaciones reconocidas, instituciones académicas 
+                                        y fuentes especializadas en derechos de los animales.
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="accordion-item">
+                                <h5 class="accordion-header" id="headingThree">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" 
+                                            data-bs-target="#collapseThree" aria-expanded="false">
+                                        ¿Puedo colaborar con contenido?
+                                    </button>
+                                </h5>
+                                <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                    <div class="accordion-body">
+                                        ¡Por supuesto! Envía tus sugerencias, correcciones o contenido adicional al 
+                                        correo ashgiolove@gmail.com
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-6">
+                    <div class="media-card">
+                        <h4><i class="fas fa-share-alt me-2"></i>Comparte este Sitio</h4>
+                        <p>Ayuda a difundir la información sobre derechos de los animales compartiendo este sitio educativo.</p>
+                        
+                        <div class="share-buttons text-center">
+                            <a href="mailto:?subject=Sitio web sobre Derechos de los Animales&body=Te recomiendo visitar este sitio educativo sobre derechos de los animales: [URL del sitio]" 
+                               class="btn-custom btn-primary mb-2">
+                                <i class="fas fa-envelope me-2"></i>Compartir por Email
+                            </a>
+                            
+                            <div class="mt-3">
+                                <p class="small text-muted">
+                                    <i class="fas fa-info-circle me-2"></i>
+                                    También puedes copiar y compartir la URL de cualquier página específica que consideres útil.
+                                </p>
+                            </div>
+                        </div>
+                        
+                        <div class="mt-4">
+                            <h6><i class="fas fa-heart text-danger me-2"></i>Agradecimientos</h6>
+                            <p class="small">
+                                Gracias por tu interés en los derechos de los animales. Tu participación 
+                                y retroalimentación nos ayuda a mejorar este recurso educativo.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Navegación -->
+            <div class="text-center mt-5">
+                <div class="button-container">
+                    <a href="index.html" class="btn-custom btn-secondary">
+                        <i class="fas fa-home me-2"></i>Volver al Inicio
+                    </a>
+                    <a href="indice.html" class="btn-custom btn-primary">
+                        <i class="fas fa-list me-2"></i>Ver Índice Completo
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="bg-light py-4 mt-5">
+        <div class="container text-center">
+            <p class="footer-text">
+                <i class="fas fa-heart text-danger me-2"></i>
+                Sitio web educativo sobre Derecho de los Animales - Hernández Gómez Ashly
+                <i class="fas fa-paw text-primary ms-2"></i>
+            </p>
+            <p class="text-muted small">
+                <a href="mailto:ashgiolove@gmail.com" class="link-primary">
+                    <i class="fas fa-envelope me-2"></i>ashgiolove@gmail.com
+                </a>
+            </p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="scripts.js"></script>
+</body>
+</html>
